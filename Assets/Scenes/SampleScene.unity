@@ -217,8 +217,8 @@ GameObject:
   - component: {fileID: 749085586}
   - component: {fileID: 749085585}
   - component: {fileID: 749085587}
-  m_Layer: 0
-  m_Name: Square
+  m_Layer: 3
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,7 +367,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3.5
   m_Material: {fileID: 0}
   m_Interpolate: 1
   m_SleepingMode: 1
@@ -387,8 +387,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
   animator: {fileID: 1868578699}
-  moveSpeed: 4
-  jumpForce: 7
+  moveSpeed: 8
+  jumpForce: 12
+  groundCheckDistance: 1.4
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!70 &788686675
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
