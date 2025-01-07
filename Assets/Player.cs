@@ -141,4 +141,9 @@ public class Player : Entity
             Flip();
         }
     }
+
+    protected override void CollisionChecks()
+    {
+        base.CollisionChecks();
+    }
 }
